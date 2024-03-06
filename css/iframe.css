@@ -1,0 +1,22 @@
+iframe {
+	/* -ms-zoom: 0.5;
+	-moz-transform: scale(0.5);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.5);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.5);
+	-webkit-transform-origin: 0 0; */
+}
+
+.iframe-container iframe {
+	width: 100%; /* 부모 요소의 너비에 맞게 설정 */
+	height: 500px; /* 원하는 높이 설정 */
+
+	//zoom: 0.5; /* 축소하기 위한 zoom 속성 */
+}
+
+.iframe-container {
+	width: 100%; /* 부모 요소의 너비에 맞게 설정 */
+	max-width: 100%; /* 부모 요소의 최대 너비에 맞게 설정 */
+	overflow: hidden; /* iframe이 부모 요소를 벗어나는 것을 방지 */
+}
