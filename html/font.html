@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			rel="shortcut icon"
+			href="data:image/x-icon"
+			type="image/x-icon"
+		/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Expires" content="-1" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta name="description" content="복사용 NewFile template" />
+		<meta name="keywords" content="newfile, template, copy" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+		/>
+		<meta
+			name="format-detection"
+			content="telephone=no, address=no, email=no"
+		/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link href="../css/common.css" rel="stylesheet" />
+
+		<meta charset="UTF-8" />
+		<title>NewFile</title>
+	</head>
+	<body>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+			.noto-sans {
+				font-family: "Noto Sans KR", sans-serif;
+				font-optical-sizing: auto;
+				font-weight: 500;
+				font-size: 40px;
+				font-style: normal;
+			}
+
+			.px {
+				font-size: 16px; /* base */
+			}
+
+			.em {
+				/* 부모기준 */
+				font-size: 2em;
+			}
+
+			.rem {
+				/* HTML기준 */
+				font-size: 2rem;
+			}
+
+			/* width : 1000px 라면   50vw : 500px */
+			.vw {
+				font-size: 5vw;
+			}
+
+			.vh {
+				font-size: 5vh;
+			}
+
+			/* width : 100%  vs width : 100vw
+            width: 100%': 요소의 부모 요소의 너비에 상대적으로 요소의 너비를 설정합니다. 부모 요소의 너비가 100px이면, 'width: 100%'를 가진 자식 요소는 100px의 너비를 가집니다.
+            'width: 100vw': 뷰포트의 너비에 대해 요소의 너비를 설정합니다. 뷰포트의 너비는 사용자가 보고 있는 창의 너비를 말합니다. 따라서 'width: 100vw'를 가진 요소는 사용자의 뷰포트 너비에 맞게 확장됩니다.
+            */
+		</style>
+
+		<div>
+			<p class="p1 noto-sans">안녕하세요</p>
+			<hr />
+			<p class="px">px 단위</p>
+			<p class="em">em 단위</p>
+			<p class="rem">rem 단위</p>
+			<p class="vw">vw 단위</p>
+			<p class="vh">vh 단위</p>
+		</div>
+
+		<hr />
+
+		<style>
+			.color-b {
+				color: #5449e6;
+			}
+
+			/* 3개 다 자신 포함해서 계산됨 */
+			.line-h {
+				line-height: 2rem;
+			}
+
+			.letter-spacing {
+				letter-spacing: 2rem;
+			}
+
+			.word-spacing {
+				word-spacing: 2rem;
+			}
+			/* 들여쓰기 */
+			.text-indent {
+				text-indent: 10px;
+			}
+
+			.text-shadow {
+				text-shadow: 1px 1px 5px rgb(59, 57, 57);
+			}
+
+			.ul {
+				list-style: none;
+			}
+		</style>
+
+		<p class="color-b">color-b</p>
+
+		<p class="line-h">
+			<!-- 2줄일경우 64px -->
+			기기 이름을 클릭하면 기기 모델, 일련 번호, OS 버전 등의 기기 정보가
+			표시됩니다. 기기 유형에 따라 표시되는 정보가 다를 수 있습니다. 기기
+			세부 사항을 보려면 보안 질문에 답변해야 할 수 있습니다.
+		</p>
+
+		<p class="letter-spacing">가나</p>
+		<p class="word-spacing">가나 123</p>
+		<p class="text-indent">동해물과백~~~~~~~~~~~~~~~~~~~~~~~~~~~~~두산이</p>
+
+		<p class="text-shadow">텍스트 그림자 테스트</p>
+	</body>
+
+	<script>
+		$(function () {
+			console.log("NewFile....");
+		});
+	</script>
+</html>
