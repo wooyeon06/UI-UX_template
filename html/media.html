@@ -29,7 +29,17 @@
 	</head>
 	<body>
 		<style>
-			/* @media [only | not] 미디어유형 [and조건] [and조건] */
+			/* @media [all | print| only | not....] 미디어유형 [and조건] [and조건] */
+
+			/* 
+            all : default
+            screen : 보여지는 화면
+            print : 인쇄화면
+            all, screen, print를 가장 널리 쓴다.
+
+            <link rel="stylesheet" type="text/css" media="all and (조건A)" href="A.css">
+<link rel="stylesheet" type="text/css" media="all and (조건B)" href="B.css">
+            */
 
 			.bg-color {
 				background-color: red;
